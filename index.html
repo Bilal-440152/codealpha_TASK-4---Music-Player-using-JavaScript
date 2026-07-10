@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Low Fade - Music Player</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="player">
+
+  <div class="topbar">
+    <span class="chevron">⌄</span>
+    <div class="topbar-text">
+      <p>PLAYING FROM PLAYLIST</p>
+      <h4>Liked Songs</h4>
+    </div>
+    <span class="dots">⋮</span>
+  </div>
+
+  <div class="poster">
+    <img src="https://i.scdn.co/image/ab67616d0000b2737be686dc1febf2f2957c1fce" alt="Song Poster">
+  </div>
+
+  <div class="info-row">
+    <h2 id="songTitle">Low Fade</h2>
+    <p id="songArtist">Karan Aujla, Mxrci</p>
+  </div>
+
+  <div class="progress-section">
+    <input type="range" id="progressBar" value="0" min="0" max="100">
+    <div class="time-row">
+      <span id="currentTime">0:00</span>
+      <span id="duration">0:00</span>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button id="prevBtn">⏮</button>
+    <button id="playBtn">▶</button>
+    <button id="nextBtn">⏭</button>
+  </div>
+
+  <div class="volume-section">
+    <span>🔊</span>
+    <input type="range" id="volumeBar" min="0" max="100" value="70">
+    <span id="volumeLabel">70</span>
+  </div>
+
+</div>
+
+<audio id="audio" src="Low_Fade_1.mp3"></audio>
+<script src="script.js"></script>
+</body>
+</html>
